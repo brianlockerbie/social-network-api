@@ -1,5 +1,4 @@
 const { Schema, model } = require('mongoose');
-const moment = require('moment');
 
 const UserSchema = new Schema({
         username: {
@@ -12,6 +11,7 @@ const UserSchema = new Schema({
         type: String,
         unique: true, 
         required: true,
+        match: [/.+\@.+\..+/]
     },
         thoughts: [
         {
@@ -19,7 +19,12 @@ const UserSchema = new Schema({
             ref: 'Thought'
         }
         ],
-        friends: [UserSchema]
+        friends: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'User'
+            }
+        ]
     },
 {
     toJSON: {
