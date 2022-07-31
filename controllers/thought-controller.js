@@ -5,7 +5,7 @@ const thoughtController = {
     getEveryThoughts(req,res) {
         Thought.find({})
             .sort({ _id: -1 })
-            .then(dbthoughtData => res.json(dbthoughtData))
+            .then(dbThoughtData => res.json(dbThoughtData))
             .catch(err => {
                 console.log(err);
                 res.status(500).json(err); 
