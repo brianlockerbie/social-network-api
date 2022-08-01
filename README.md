@@ -13,9 +13,6 @@ I created an API for a social network web application where users can share thei
 * Express
 
 
-## Usage
-Video walkthrough link:
-
 ## User Story
 AS A social media startup
 I WANT an API for my social network that uses a NoSQL database
