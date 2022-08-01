@@ -2,7 +2,7 @@
 <p align="center">Module #18 - NoSQL</p>
 
 ## Description
-
+I created an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.
 
 
 ## Built With:
@@ -32,7 +32,3 @@ THEN I am able to successfully create, update, and delete users and thoughts in 
 WHEN I test API POST and DELETE routes in Insomnia
 THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
 
-
-## Screenshots
-<img src="">
-<img src="">
